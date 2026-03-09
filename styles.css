@@ -202,7 +202,7 @@ img {
   width: 100%;
   max-width: var(--main-column-width);
   padding: 4px 0;
-  gap: 0;
+  gap: 16px;
 }
 
 /* ============================================
@@ -428,7 +428,7 @@ img {
 .section-header {
   font: var(--font-card-title-l);
   color: var(--color-primary-text);
-  padding: 16px 0 12px;
+  padding: 4px 0 8px;
 }
 
 .section-header--picks {
@@ -714,8 +714,8 @@ img {
 .feed-section {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px 0;
+  gap: 0;
+  padding: 0;
 }
 
 /* ============================================
