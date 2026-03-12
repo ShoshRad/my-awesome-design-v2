@@ -9,7 +9,7 @@ import { CardTrending } from '@/design-system/registry/cards/CardTrending';
 import { CardSpotlight } from '@/design-system/registry/cards/CardSpotlight';
 import { CardVideoReel } from '@/design-system/registry/cards/CardVideoReel';
 import { CardPicksCarousel } from '@/design-system/registry/cards/CardPicksCarousel';
-import { BrandRow, CardCta, SponsorBar } from '@/design-system/registry/primitives';
+import { BrandRow, CardCta, SponsorBar, PublisherLogos } from '@/design-system/registry/primitives';
 import { FeedSection } from '@/design-system/registry/layouts/FeedSection';
 import { CardGrid } from '@/design-system/registry/layouts/CardGrid';
 import { SectionHeader } from '@/design-system/registry/layouts/SectionHeader';
@@ -36,7 +36,7 @@ const CATEGORIES: { label: string; key: string; ids: string[] }[] = [
   {
     label: 'Primitives',
     key: 'primitives',
-    ids: ['brand-row', 'card-cta', 'sponsor-bar'],
+    ids: ['brand-row', 'card-cta', 'sponsor-bar', 'publisher-logos'],
   },
   {
     label: 'Layouts',
@@ -67,21 +67,44 @@ function renderPreview(id: string) {
       );
     case 'card-2x1':
       return (
-        <Card2x1
-          title="The most relaxing Farm Game. No Install"
-          description="Enjoy farming, stock up and make friends."
-          imageSrc="/assets/images/img-04-card1.png"
-          brand={{ iconSrc: '/assets/icon-ad.svg', name: 'Taonga: The Island Farm' }}
-        />
+        <CardGrid columns={2}>
+          <Card2x1
+            title="The most relaxing Farm Game. No Install"
+            description="Enjoy farming, stock up and make friends."
+            imageSrc="/assets/images/img-04-card1.png"
+            brand={{ iconSrc: '/assets/icon-ad.svg', name: 'Taonga: The Island Farm' }}
+          />
+          <Card2x1
+            title="We Tried HelloFresh &amp; Home Chef. Here's Our Review."
+            description="Meal Kit Face-Off: The Best Options for Your Dinner Plans"
+            imageSrc="/assets/images/img-05-card2-264a45.png"
+            brand={{ iconSrc: '/assets/icon-ad.svg', name: 'Topdust' }}
+            ctaLabel="learn more"
+          />
+        </CardGrid>
       );
     case 'card-3x1':
       return (
-        <Card3x1
-          title="ADT pro install gives you more time to enjoy the holidays"
-          imageSrc="/assets/images/img-adt-5ff0bd.png"
-          brand={{ iconSrc: '/assets/icon-ad.svg', name: 'ADT' }}
-          ctaLabel="Shop Now"
-        />
+        <CardGrid columns={3}>
+          <Card3x1
+            title="ADT pro install gives you more time to enjoy the"
+            description="Your holiday dinner looks picture perfect..."
+            imageSrc="/assets/images/img-adt-5ff0bd.png"
+            brand={{ iconSrc: '/assets/icon-ad.svg', name: 'ADT' }}
+            ctaLabel="Shop Now"
+          />
+          <Card3x1
+            title="7 Ways to Retire Comfortably With $1M"
+            description="How long does $1,000,000 last in retirement?"
+            imageSrc="/assets/images/img-fisher-5cb145.png"
+            brand={{ iconSrc: '/assets/icon-ad.svg', name: 'Fisher Investments' }}
+          />
+          <Card3x1
+            title="US upgrades probe into 129,000 Ford vehicles following fatal collisions"
+            imageSrc="/assets/images/img-ford.png"
+            brand={{ iconSrc: '/assets/icon-ad.svg', name: 'NEWS LIVE' }}
+          />
+        </CardGrid>
       );
     case 'card-trending':
       return (
@@ -142,6 +165,12 @@ function renderPreview(id: string) {
       return (
         <div style={{ padding: 16, background: 'white', borderRadius: 8, border: '1px solid #e5e7eb' }}>
           <SponsorBar iconSrc="/assets/icon-ad.svg" sponsorName="portal to compare" />
+        </div>
+      );
+    case 'publisher-logos':
+      return (
+        <div style={{ padding: 16, background: 'white', borderRadius: 8, border: '1px solid #e5e7eb' }}>
+          <PublisherLogos />
         </div>
       );
     case 'feed-section':
@@ -430,7 +459,7 @@ export default function RegistryPage() {
                   flexShrink: 0,
                 }}
               />
-              Demo Publisher Feed
+              NewsLive Demo Feed
               <span
                 style={{
                   marginLeft: 'auto',
@@ -444,6 +473,85 @@ export default function RegistryPage() {
                 }}
               >
                 Preview
+              </span>
+            </a>
+
+            <a
+              href="/business-insider"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                padding: '6px 10px',
+                borderRadius: 6,
+                textDecoration: 'none',
+                color: '#212832',
+                fontSize: 13,
+              }}
+            >
+              <span
+                style={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: '50%',
+                  background: '#f59e0b',
+                  flexShrink: 0,
+                }}
+              />
+              Business Insider — Full Experience
+              <span
+                style={{
+                  marginLeft: 'auto',
+                  fontSize: 10,
+                  fontWeight: 600,
+                  background: '#fff7ed',
+                  color: '#ea580c',
+                  borderRadius: 9999,
+                  padding: '1px 7px',
+                  lineHeight: '18px',
+                }}
+              >
+                Preview
+              </span>
+            </a>
+            <a
+              href="/business-insider-current"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                padding: '6px 10px',
+                borderRadius: 6,
+                fontSize: 13,
+                fontWeight: 500,
+                color: '#4c5560',
+                textDecoration: 'none',
+                cursor: 'pointer',
+              }}
+            >
+              <span
+                style={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: '50%',
+                  background: '#3b82f6',
+                  flexShrink: 0,
+                }}
+              />
+              Business Insider — Current Feed
+              <span
+                style={{
+                  marginLeft: 'auto',
+                  fontSize: 10,
+                  fontWeight: 600,
+                  background: '#eff6ff',
+                  color: '#2563eb',
+                  borderRadius: 9999,
+                  padding: '1px 7px',
+                  lineHeight: '18px',
+                }}
+              >
+                Current
               </span>
             </a>
 
@@ -524,73 +632,97 @@ export default function RegistryPage() {
                   justifyContent: 'center',
                 }}
               >
-                <div style={{ maxWidth: 500, width: '100%' }}>
+                <div style={{ maxWidth: 867, width: '100%' }}>
                   {renderPreview(selectedEntry.id)}
                 </div>
               </div>
             ) : (
-              /* ── Catalog grid ── */
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-                  gap: 20,
-                }}
-              >
-                {COMPONENT_REGISTRY.map((entry) => (
-                  <button
-                    key={entry.id}
-                    onClick={() => setSelectedId(entry.id)}
-                    style={{
-                      background: 'white',
-                      border: '1px solid #e5e7eb',
-                      borderRadius: 12,
-                      padding: 20,
-                      textAlign: 'left',
-                      cursor: 'pointer',
-                      transition: 'box-shadow 150ms ease, border-color 150ms ease',
-                      fontFamily: 'inherit',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: 12,
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLButtonElement).style.boxShadow =
-                        '0 4px 12px rgba(0,0,0,0.08)';
-                      (e.currentTarget as HTMLButtonElement).style.borderColor = '#d1d5db';
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLButtonElement).style.boxShadow = 'none';
-                      (e.currentTarget as HTMLButtonElement).style.borderColor = '#e5e7eb';
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <span style={{ fontSize: 15, fontWeight: 600, color: '#212832' }}>
-                        {entry.name}
-                      </span>
-                      {categoryBadge(entry.category)}
-                    </div>
-
-                    <p style={{ fontSize: 13, color: '#4c5560', margin: 0, lineHeight: 1.5 }}>
-                      {entry.description}
-                    </p>
-
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                      <span
+              /* ── Catalog grouped by category ── */
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
+                {CATEGORIES.map((cat) => {
+                  const items = cat.ids.map(getEntry).filter(Boolean) as ComponentEntry[];
+                  if (items.length === 0) return null;
+                  return (
+                    <div key={cat.key}>
+                      <h3
                         style={{
-                          width: 6,
-                          height: 6,
-                          borderRadius: '50%',
-                          background: entry.figmaMatch ? '#10b981' : '#f59e0b',
-                          flexShrink: 0,
+                          fontSize: 14,
+                          fontWeight: 600,
+                          color: '#212832',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.06em',
+                          margin: '0 0 16px',
+                          paddingBottom: 8,
+                          borderBottom: '1px solid #e5e7eb',
                         }}
-                      />
-                      <span style={{ fontSize: 12, color: '#9ca8b5' }}>
-                        {entry.figmaMatch ? 'Figma Match' : 'Pending'}
-                      </span>
+                      >
+                        {cat.label}
+                      </h3>
+                      <div
+                        style={{
+                          display: 'grid',
+                          gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+                          gap: 20,
+                        }}
+                      >
+                        {items.map((entry) => (
+                          <button
+                            key={entry.id}
+                            onClick={() => setSelectedId(entry.id)}
+                            style={{
+                              background: 'white',
+                              border: '1px solid #e5e7eb',
+                              borderRadius: 12,
+                              padding: 20,
+                              textAlign: 'left',
+                              cursor: 'pointer',
+                              transition: 'box-shadow 150ms ease, border-color 150ms ease',
+                              fontFamily: 'inherit',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: 12,
+                            }}
+                            onMouseEnter={(e) => {
+                              (e.currentTarget as HTMLButtonElement).style.boxShadow =
+                                '0 4px 12px rgba(0,0,0,0.08)';
+                              (e.currentTarget as HTMLButtonElement).style.borderColor = '#d1d5db';
+                            }}
+                            onMouseLeave={(e) => {
+                              (e.currentTarget as HTMLButtonElement).style.boxShadow = 'none';
+                              (e.currentTarget as HTMLButtonElement).style.borderColor = '#e5e7eb';
+                            }}
+                          >
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                              <span style={{ fontSize: 15, fontWeight: 600, color: '#212832' }}>
+                                {entry.name}
+                              </span>
+                              {categoryBadge(entry.category)}
+                            </div>
+
+                            <p style={{ fontSize: 13, color: '#4c5560', margin: 0, lineHeight: 1.5 }}>
+                              {entry.description}
+                            </p>
+
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                              <span
+                                style={{
+                                  width: 6,
+                                  height: 6,
+                                  borderRadius: '50%',
+                                  background: entry.figmaMatch ? '#10b981' : '#f59e0b',
+                                  flexShrink: 0,
+                                }}
+                              />
+                              <span style={{ fontSize: 12, color: '#9ca8b5' }}>
+                                {entry.figmaMatch ? 'Figma Match' : 'Pending'}
+                              </span>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                  </button>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>

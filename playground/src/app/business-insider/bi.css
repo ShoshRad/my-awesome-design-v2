@@ -1,0 +1,425 @@
+/* ============================================
+   Business Insider — Publisher Chrome
+   ============================================ */
+
+/* Garnett font approximation — using system fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Source+Serif+4:wght@400&display=swap');
+
+/* BI uses Garnett which isn't publicly available — Source Sans Pro is close */
+:root {
+  --bi-font: 'Source Sans 3', -apple-system, sans-serif;
+  --bi-serif: Georgia, 'Source Serif 4', serif;
+  --bi-black: #0A0A0A;
+  --bi-dark-gray: #31313B;
+  --bi-mid-gray: #71717A;
+  --bi-light-gray: #CECECE;
+  --bi-bg-gray: #FAFAFA;
+  --bi-blue: #002AFF;
+  --bi-green: #1F7F51;
+  --bi-red: #E51716;
+  --bi-warm-bg: #FAF7F5;
+  --bi-content-width: 1260px;
+  --bi-page-width: 1512px;
+  --bi-side-padding: 126px;
+  --bi-body-width: 540px;
+  --bi-article-col: 680px;
+  --bi-headline-width: 860px;
+}
+
+/* ── Preview Banner ── */
+.bi-preview-banner {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: system-ui, sans-serif;
+}
+
+.bi-preview-banner__back {
+  font-size: 14px;
+  color: #4c5560;
+  text-decoration: none;
+}
+
+.bi-preview-banner__center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bi-preview-banner__badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.bi-preview-banner__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212832;
+}
+
+/* ── Ticker Bar ── */
+.bi-ticker {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 24px 12px 102px;
+  border-bottom: 0.75px solid var(--bi-light-gray);
+  background: #fff;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.bi-ticker::-webkit-scrollbar { display: none; }
+
+.bi-ticker__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.bi-ticker__label {
+  font: 600 12px/1.4em var(--bi-font);
+  color: var(--bi-black);
+  text-transform: uppercase;
+}
+
+.bi-ticker__value {
+  font: 600 12px/1.4em var(--bi-font);
+}
+
+.bi-ticker__value--up { color: var(--bi-green); }
+.bi-ticker__value--down { color: var(--bi-red); }
+
+.bi-ticker__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--bi-light-gray);
+  flex-shrink: 0;
+}
+
+/* ── Nav Bar ── */
+.bi-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px var(--bi-side-padding) 15px;
+  border-bottom: 0.75px solid var(--bi-light-gray);
+  background: #fff;
+}
+
+.bi-nav__logo {
+  height: 36px;
+  width: auto;
+}
+
+.bi-nav__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.bi-nav__link {
+  font: 600 12px/1.4em var(--bi-font);
+  color: var(--bi-black);
+  text-decoration: none;
+}
+
+.bi-nav__link:hover {
+  text-decoration: underline;
+}
+
+.bi-nav__search {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--bi-black);
+}
+
+/* ── Article Wrapper ──
+   Content area: 1260px centered (via padding 126px on 1512px page)
+   Article column: 829px centered within content area
+   Headline: 1050px centered (breaks out of 829 col)
+   Body text: 614px left-aligned within 829 col
+*/
+.bi-article-wrap {
+  padding: 24px var(--bi-side-padding) 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bi-article {
+  width: var(--bi-article-col);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bi-article__category {
+  font: 600 10px/1.4em var(--bi-font);
+  color: var(--bi-dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.bi-article__headline {
+  font: 500 36px/1.35em var(--bi-font);
+  color: var(--bi-black);
+  width: var(--bi-headline-width);
+  align-self: center;
+  margin: 0 0 16px;
+}
+
+.bi-article__byline {
+  font: 400 14px/1.4em var(--bi-font);
+  color: var(--bi-black);
+  margin-bottom: 4px;
+}
+
+.bi-article__byline a {
+  font-weight: 600;
+  color: var(--bi-blue);
+  text-decoration: none;
+}
+
+.bi-article__byline a:hover {
+  text-decoration: underline;
+}
+
+.bi-article__date {
+  font: 500 12px/1.4em var(--bi-font);
+  color: var(--bi-black);
+  margin-bottom: 16px;
+}
+
+.bi-article__hero {
+  width: 100%;
+  margin: 24px 0;
+}
+
+.bi-article__hero img {
+  width: 100%;
+  display: block;
+}
+
+.bi-article__caption {
+  font: 600 12px/1.4em var(--bi-font);
+  color: var(--bi-black);
+  margin-top: 8px;
+}
+
+.bi-article__credit {
+  font: 500 12px/1.4em var(--bi-font);
+  color: var(--bi-mid-gray);
+}
+
+/* Share/Save bar */
+.bi-article__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--bi-body-width);
+  padding: 12px 0;
+  border-top: 0.75px solid var(--bi-light-gray);
+  border-bottom: 0.75px solid var(--bi-light-gray);
+  margin: 16px 0;
+}
+
+.bi-article__action-btn {
+  font: 600 12px/1.4em var(--bi-font);
+  color: var(--bi-black);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Listen button */
+.bi-article__listen {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  width: var(--bi-body-width);
+  margin-bottom: 16px;
+}
+
+.bi-article__listen-text {
+  font: 500 12px/1.4em var(--bi-font);
+  color: var(--bi-black);
+}
+
+.bi-article__listen-duration {
+  font: 500 12px/1.4em var(--bi-font);
+  color: #505057;
+}
+
+/* Summary bullets */
+.bi-article__summary {
+  width: var(--bi-body-width);
+  padding-left: 20px;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bi-article__summary li {
+  font: 500 17px/1.5em var(--bi-font);
+  color: var(--bi-black);
+}
+
+/* Article body */
+.bi-article__body {
+  width: var(--bi-body-width);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bi-article__body p {
+  font: 400 18px/1.6em var(--bi-serif);
+  color: var(--bi-black);
+  margin: 0;
+}
+
+.bi-article__body a {
+  color: var(--bi-blue);
+  text-decoration: underline;
+}
+
+/* Tags */
+.bi-article__tags {
+  display: flex;
+  gap: 8px;
+  margin: 32px 0;
+  width: var(--bi-body-width);
+}
+
+.bi-article__tag {
+  font: 600 12px/3.67em var(--bi-font);
+  color: var(--bi-dark-gray);
+  padding: 0 12px;
+  border: 1px solid var(--bi-light-gray);
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ── Separator into feed ── */
+.bi-separator {
+  width: var(--bi-article-col);
+  height: 0.75px;
+  background: var(--bi-light-gray);
+  margin: 0 auto;
+}
+
+/* ── Feed wrapper ── */
+.bi-feed {
+  width: var(--bi-article-col);
+  padding: 24px 0 52px;
+  margin: 0 auto;
+
+  /* Override card fonts to match BI's typography (Garnett → Source Sans 3) */
+  --font-card-title-l: 400 20px/1.2em var(--bi-font);
+  --font-card-title-m: 400 18px/1.22em var(--bi-font);
+  --font-card-title-s: 400 16px/1.25em var(--bi-font);
+  --font-card-desc: 400 14px/1.29em var(--bi-font);
+  --font-section-header: 700 20px/1.2em var(--bi-font);
+}
+
+/* ── Section header (shared style for feed) ── */
+.bi-feed .section-header {
+  font: var(--font-section-header);
+  color: var(--color-primary-text, #0A0A0A);
+  padding: 4px 0 8px;
+}
+
+/* ── Read Next Section ── */
+.bi-read-next {
+  width: var(--bi-article-col);
+  background: var(--bi-warm-bg);
+  padding: 16px 24px 17px;
+  margin: 0 auto;
+}
+
+.bi-read-next__heading {
+  font: 800 18px/1.35em var(--bi-font);
+  color: var(--bi-black);
+  margin: 0 0 8px;
+}
+
+.bi-read-next__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 32px;
+  position: relative;
+}
+
+.bi-read-next__grid::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--bi-mid-gray) 25%, transparent 25%);
+}
+
+.bi-read-next__grid::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--bi-mid-gray) 25%, transparent 25%);
+}
+
+.bi-read-next__article {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bi-read-next__title {
+  font: 500 14px/1.35em var(--bi-font);
+  color: var(--bi-black);
+  flex: 1;
+  margin: 0;
+}
+
+.bi-read-next__thumb {
+  width: 104px;
+  height: 78px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bi-bg-gray);
+}
+
+/* ── Current feed: disable all hover animations ── */
+.bi-feed--current .card__image-wrap:hover .card__image {
+  transform: none;
+}
+.bi-feed--current .card__image {
+  transition: none;
+}

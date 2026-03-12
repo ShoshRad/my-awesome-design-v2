@@ -4,18 +4,32 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import './CardSpotlight.styles.css';
 import { BrandRow } from '../../primitives/BrandRow';
 
-interface CardSpotlightProps {
+interface SpotlightItem {
+  videoSrc: string;
   title: string;
   brand: { iconSrc: string; name: string };
-  videoSources: string[];
 }
 
-export function CardSpotlight({
-  title,
-  brand,
-  videoSources,
-}: CardSpotlightProps) {
-  const totalSteps = videoSources.length || 4;
+interface CardSpotlightProps {
+  /** @deprecated Use items[] instead */
+  title?: string;
+  /** @deprecated Use items[] instead */
+  brand?: { iconSrc: string; name: string };
+  /** @deprecated Use items[] instead */
+  videoSources?: string[];
+  items?: SpotlightItem[];
+}
+
+export function CardSpotlight(props: CardSpotlightProps) {
+  const items: SpotlightItem[] = props.items
+    ? props.items
+    : (props.videoSources || []).map((src) => ({
+        videoSrc: src,
+        title: props.title || '',
+        brand: props.brand || { iconSrc: '', name: '' },
+      }));
+
+  const totalSteps = items.length || 4;
   const [activeStep, setActiveStep] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -24,12 +38,12 @@ export function CardSpotlight({
     (step: number) => {
       const next = (step + totalSteps) % totalSteps;
       setActiveStep(next);
-      if (videoRef.current && videoSources[next]) {
-        videoRef.current.src = videoSources[next];
+      if (videoRef.current && items[next]) {
+        videoRef.current.src = items[next].videoSrc;
         videoRef.current.play().catch(() => {});
       }
     },
-    [totalSteps, videoSources],
+    [totalSteps, items],
   );
 
   useEffect(() => {
@@ -61,7 +75,7 @@ export function CardSpotlight({
         <video
           ref={videoRef}
           className="card__video"
-          src={videoSources[0]}
+          src={items[0]?.videoSrc}
           muted
           autoPlay
           playsInline
@@ -88,8 +102,8 @@ export function CardSpotlight({
       </div>
 
       <div className="card__body">
-        <BrandRow brandIcon={brand.iconSrc} brandName={brand.name} />
-        <h3 className="card__title">{title}</h3>
+        <BrandRow brandIcon={items[activeStep]?.brand.iconSrc} brandName={items[activeStep]?.brand.name} />
+        <h3 className="card__title">{items[activeStep]?.title}</h3>
       </div>
     </div>
   );

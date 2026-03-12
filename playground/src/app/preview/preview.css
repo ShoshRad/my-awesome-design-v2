@@ -404,7 +404,7 @@
    Section Header
    ============================================ */
 .section-header {
-  font: var(--font-card-title-l);
+  font: var(--font-section-header);
   color: var(--color-primary-text);
   padding: 4px 0 8px;
 }
