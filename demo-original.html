@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Feed Desktop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@700;900&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== TOP BAR ========== -->
+  <header class="top-bar">
+    <div class="top-bar__inner">
+      <div class="top-bar__spacer"></div>
+      <a class="top-bar__logo" href="#">
+        <img src="assets/publisher-logo.png" alt="Logo">
+      </a>
+      <a class="top-bar__login" href="#">Login | Subscribe</a>
+    </div>
+  </header>
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <nav class="nav-bar">
+    <div class="nav-bar__inner">
+      <a class="nav-bar__menu-icon" href="#">
+        <img src="assets/menu-icon.svg" alt="Menu" style="width:46px;height:44px;">
+      </a>
+      <div class="nav-bar__items">
+        <a class="nav-bar__item" href="#">News</a>
+        <a class="nav-bar__item" href="#">Sports</a>
+        <a class="nav-bar__item" href="#">Immigration</a>
+        <a class="nav-bar__item" href="#">Politics</a>
+        <a class="nav-bar__item" href="#">Opinion</a>
+        <a class="nav-bar__item" href="#">Games</a>
+        <a class="nav-bar__item" href="#">Obituaries</a>
+        <a class="nav-bar__item" href="#">Careers</a>
+        <a class="nav-bar__item" href="#">Banking</a>
+        <a class="nav-bar__item" href="#">Guides</a>
+      </div>
+      <span class="nav-bar__weather">64&deg;F</span>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-content">
+    <div class="page-content__inner">
+
+      <!-- ===== MAIN COLUMN ===== -->
+      <div class="main-column">
+
+        <!-- ===== ARTICLE AREA ===== -->
+        <article class="article">
+
+          <!-- Article Header -->
+          <div class="article__header">
+            <span class="article__category">Business</span>
+            <h1 class="article__title">California warns Tesla faces 30-day sale ban for misleading use of &ldquo;autopilot&rdquo;</h1>
+            <div class="article__meta">
+              <span class="article__byline">By&nbsp;</span>
+              <a class="article__author" href="#">Jose Fabian</a>
+            </div>
+            <div class="article__date">Updated on: December 17, 2025 / 11:18 AM PST / News LIve San Francisco</div>
+            <div class="article__promo">
+              <img src="assets/google-icon.svg" alt="" style="height:18px;">
+              <span>Add NewsLive News on Google</span>
+            </div>
+          </div>
+
+          <!-- Ad Banners (positioned in sidebar space outside article) -->
+          <div class="article__ads">
+            <div class="ad-banner-inline">
+              <span class="ad-banner-inline__label">Advertisement</span>
+              <div class="ad-banner-inline__content">
+                <div class="ad-banner-inline__headline">LEARN WHEREVER AND WHENEVER</div>
+                <div class="ad-banner-inline__subtext">100% Online Graduate Degrees</div>
+                <a class="ad-banner-inline__button" href="#">START NOW</a>
+              </div>
+            </div>
+            <div class="ad-banner-inline__image" style="margin-top: 16px;">
+              <img src="assets/images/img-03-sponsored2.png" alt="Advertisement" style="width: 100%; border-radius: 4px;">
+            </div>
+          </div>
+
+          <!-- Article body paragraphs (full feed width) -->
+          <div class="article__body">
+            <p>The California DMV on Tuesday said Tesla Motors faces a possible 30-day sale ban over its misleading use of the term &ldquo;autopilot&rdquo; in its marketing of electric vehicles.</p>
+            <p>On Nov. 20, an administrative judge ruled that Tesla Motors&rsquo; use of &ldquo;autopilot&rdquo; and &ldquo;full self-driving capability&rdquo; was a misleading description of its &ldquo;advanced driving assistant features,&rdquo; and that it violated state law, the DMV said.</p>
+            <p>In their decision, the judge proposed suspending Tesla&rsquo;s manufacturing and dealer license for 30 days. However, the DMV is giving Tesla 60 days to address its use of the term &ldquo;autopilot&rdquo; before temporarily suspending its dealer license.</p>
+            <p>&ldquo;Tesla can take simple steps to pause this decision and permanently resolve this issue &mdash; steps autonomous vehicle companies and other automakers have been able to achieve in California&rsquo;s nation-leading and supportive innovation marketplace,&rdquo; DMV Director Steve Gordon said.</p>
+            <p>Tesla had already stopped its use of &ldquo;full self-driving capability&rdquo; and switched to &ldquo;full self-driving (supervised)&rdquo; after the DMV filed accusations against it in November 2023.</p>
+          </div>
+
+          <!-- Large Article Image/Video -->
+          <div class="article__media">
+            <div class="article__image" style="background-image: url('assets/images/img-01-lead.png')">
+              <div class="article__play-btn">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.5)"/>
+                  <path d="M19 15l14 9-14 9V15z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- More article text after image -->
+          <div class="article__body article__body--continued">
+            <p>The DMV said its decision to file those accusations stretches back to Tesla&rsquo;s 2021 marketing of its advanced driver assistance system. Besides the two terms, the DMV said it also took issue with the phrase, &ldquo;The system is designed to be able to conduct short and long-distance trips with no action required by the person in the driver&rsquo;s seat.&rdquo;</p>
+            <p>&ldquo;Vehicles equipped with those ADAS features could not at the time of those advertisements, and cannot now, operate as autonomous vehicles,&rdquo; the DMV said.</p>
+            <p>As for the manufacturing license suspension, the DMV issued a permanent stay on that proposal.</p>
+            <p>&ldquo;This was a &lsquo;consumer protection&rsquo; order about the use of the term &lsquo;Autopilot&rsquo; in a case where not one single customer came forward to say there&rsquo;s a problem,&rdquo; Tesla said in a prepared statement. &ldquo;Sales in California will continue uninterrupted.&rdquo;</p>
+          </div>
+
+          <div class="article__footer">
+            &copy; 2025 CBS Broadcasting Inc. All Rights Reserved.
+          </div>
+
+          <!-- In: Topics -->
+          <div class="article__topics">
+            <span class="article__topics-label">In:</span>
+            <div class="article__topics-list">
+              <a class="topic-tag" href="#">Tesla</a>
+              <a class="topic-tag" href="#">Elon Musk</a>
+              <a class="topic-tag" href="#">California</a>
+              <a class="topic-tag" href="#">California Department of Motor Vehicles</a>
+            </div>
+          </div>
+
+        </article>
+
+        <div class="separator"></div>
+
+        <!-- ===== FEED CARD SECTIONS (exact Figma order) ===== -->
+
+        <!-- Section 1: Mode/1:1 — Full-width feature card (Michelin Chef) -->
+        <section class="feed-section">
+          <div class="card card--feature">
+            <div class="card__sponsor-bar"><span class="card__sponsor-icon"><img src="assets/icon-ad.svg" alt="Ad"></span><span class="card__sponsor-name">portal to compare</span></div>
+            <div class="card__image-wrap">
+              <div class="card__image card__image--feature" style="background-image: url('assets/images/img-07-compare.png')"></div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--l">Michelin Chef Reveals Why Most Home Cooks Use the Wrong Pan</h3>
+              <p class="card__desc">From heat distribution to surface material, professional chefs explain how choosing the right cookware can transform your cooking and why your current set might be holding you back.</p>
+              <span class="card__cta">learn more</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Mode/2:1 — 2 vertical cards, brand BELOW image -->
+        <section class="feed-section">
+          <div class="card-grid card-grid--2col">
+            <div class="card">
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-04-card1.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">Taonga: The Island Farm</span></div>
+                <div class="card__title card__title--m">The most relaxing Farm Game. No Install</div>
+                <p class="card__desc">Enjoy farming, stock up and make friends. Taonga is a whole world full of adventure!</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-05-card2-264a45.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">Topdust</span></div>
+                <div class="card__title card__title--m">We Tried HelloFresh &amp; Home Chef. Here&rsquo;s Our Review.</div>
+                <p class="card__desc">Meal Kit Face-Off: The Best Options for Your Dinner Plans</p>
+                <span class="card__cta">learn more</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Mode/3:1 — 3 vertical cards, brand BELOW image -->
+        <section class="feed-section">
+          <div class="card-grid card-grid--3col">
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-adt-5ff0bd.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">ADT</span></div>
+                <div class="card__title">ADT pro install gives you more time to enjoy the </div>
+                <p class="card__desc">Your holiday dinner looks picture perfect. We can set up your ADT and Trusted Neighbor&trade; ...</p>
+                <span class="card__cta">Shop Now</span>
+              </div>
+            </div>
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-fisher-5cb145.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">Fisher Investments</span></div>
+                <div class="card__title">7 Ways to Retire Comfortably With $1M</div>
+                <p class="card__desc">How long does $1,000,000 last in retirement? Learn ways to live comfortably with our guide.</p>
+              </div>
+            </div>
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-ford.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">NEWS LIVE</span></div>
+                <div class="card__title">US upgrades probe into 129,000 Ford vehicles following fatal collisions</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Trending Now — 2x2 grid of horizontal cards -->
+        <section class="feed-section">
+          <div class="section-header">Trending Now</div>
+          <div class="trending-grid">
+            <div class="card card--trending">
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-trending1.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/images/icon-mcdonalds.png" alt=""><span class="card__brand">McDonald</span></div>
+                <div class="card__title">McDonald&rsquo;s rolls out all-new menu item with The Grinch Meal</div>
+                <div class="card__bottom-row">
+                  <span class="card__cta">Learn More</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--trending">
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-trending2.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/images/icon-livenews-6596e0.png" alt=""><span class="card__brand">live news</span></div>
+                <div class="card__title">Discover the Enchanting Coasts of Italy</div>
+                <div class="card__bottom-row">
+                  <span class="card__category">Travel</span>
+                  <span class="card__cta">Learn More</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--trending">
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-trending3.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/images/icon-livenews-6596e0.png" alt=""><span class="card__brand">live news</span></div>
+                <div class="card__title">Festive Home Decor Inspired by The Grinch</div>
+                <div class="card__bottom-row">
+                  <span class="card__category">lifestyle</span>
+                  <span class="card__cta">Learn More</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--trending">
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-trending4.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/images/icon-bmw.png" alt=""><span class="card__brand">bmw</span></div>
+                <div class="card__title">Introducing the latest sensation from electric cars revolution</div>
+                <div class="card__bottom-row">
+                  <span class="card__cta">Learn More</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5: Spotlight On — video card with stepper timeline -->
+        <section class="feed-section">
+          <div class="section-header">Spotlight on</div>
+          <div class="card card--spotlight">
+            <div class="spotlight__video-wrap">
+              <video class="spotlight__video" muted playsinline></video>
+              <div class="spotlight__stepper">
+                <div class="spotlight__step spotlight__step--active"><div class="spotlight__step-fill"></div></div>
+                <div class="spotlight__step"><div class="spotlight__step-fill"></div></div>
+                <div class="spotlight__step"><div class="spotlight__step-fill"></div></div>
+                <div class="spotlight__step"><div class="spotlight__step-fill"></div></div>
+              </div>
+              <button class="spotlight__nav spotlight__nav--prev" id="spotlightPrev">
+                <img src="assets/spotlight-prev.svg" alt="Previous">
+              </button>
+              <button class="spotlight__nav spotlight__nav--next" id="spotlightNext">
+                <img src="assets/spotlight-next.svg" alt="Next">
+              </button>
+            </div>
+            <div class="card__body">
+              <div class="card__brand-row"><img class="card__brand-icon" src="assets/images/icon-livenews-6596e0.png" alt=""><span class="card__brand">NEWS LIVE</span></div>
+              <h3 class="card__title card__title--l">Beyond the Finish Line: Marathon Runner</h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6: Picks for You — Carousel with Verizon branding -->
+        <section class="feed-section">
+          <div class="section-header">Picks for You</div>
+          <div class="picks-carousel">
+            <div class="picks-carousel__header">
+              <div class="picks-carousel__brand-logo">
+                <img src="assets/icon-verizon.png" alt="Verizon">
+              </div>
+              <span class="picks-carousel__brand-name">verizon</span>
+            </div>
+            <div class="picks-carousel__items">
+              <div class="picks-carousel__item">
+                <div class="picks-carousel__item-image" style="background-image: url('assets/images/img-carousel1.png')"></div>
+                <div class="picks-carousel__item-title">Stop overpaying for your plan&mdash;bring your current device and save every month</div>
+              </div>
+              <div class="picks-carousel__item">
+                <div class="picks-carousel__item-image" style="background-image: url('assets/images/img-carousel2.png')"></div>
+                <div class="picks-carousel__item-title">The one monthly subscription that covers almost every device in your living room</div>
+              </div>
+              <div class="picks-carousel__item">
+                <div class="picks-carousel__item-image" style="background-image: url('assets/images/img-carousel3.png')"></div>
+                <div class="picks-carousel__item-title">Eat, ride, and save: Uber One membership included with select Verizon plans</div>
+              </div>
+              <div class="picks-carousel__item">
+                <div class="picks-carousel__item-image" style="background-image: url('assets/images/img-carousel4.png')"></div>
+                <div class="picks-carousel__item-title">Save on iPhone 15. Dynamic Magic</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 7: Mode/2:1 — 2 cards, brand ABOVE image (Seeking Alpha + Tomorrow) -->
+        <section class="feed-section">
+          <div class="card-grid card-grid--2col">
+            <div class="card">
+              <div class="card__sponsor-bar"><span class="card__sponsor-icon"><img src="assets/icon-seeking-alpha.svg" alt=""></span><span class="card__sponsor-name">Seeking Alpha</span></div>
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-17-seeking.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__title card__title--m">Discover 3 Stocks For Income + 3 Stocks For AI Growth</div>
+                <p class="card__desc">See which 3 AI stocks and 3 dividend-paying names are rated highly for value and growth potential.</p>
+                <span class="card__cta">learn more</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__sponsor-bar"><span class="card__sponsor-icon"><img src="assets/icon-tomorrow.svg" alt=""></span><span class="card__sponsor-name">Tomorrow Investor</span></div>
+
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-18-tomorrow.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__title card__title--m">Rare Earth Opportunity Emerges in Montana</div>
+                <p class="card__desc">This high-grade site is prime to make significant discoveries&mdash;positioning it to support America&rsquo;s critical mineral supply chains.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 8: Latest Videos -->
+        <section class="feed-section">
+          <div class="section-header">Latest videos</div>
+          <div class="card-carousel-wrap">
+            <button class="card-carousel__nav card-carousel__nav--prev" id="videoNavPrev" aria-label="Scroll to previous videos" style="display:none;">
+              <img src="assets/chevron-forward.svg" alt="Previous">
+            </button>
+            <button class="card-carousel__nav card-carousel__nav--next" id="videoNavNext" aria-label="Scroll to next videos">
+              <img src="assets/chevron-forward.svg" alt="Next">
+            </button>
+          <div class="card-carousel" id="videoCarousel">
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-08-video1.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-honeymilk.svg" alt=""><span class="card__brand">Honey &amp; milk</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Making these FLUFFY American Pancakes at home</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 1:54</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-09-video2.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-news.svg" alt=""><span class="card__brand">news</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Ja was flying &#x1FAE3;</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 0:09</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-10-video3.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-clubmed.svg" alt=""><span class="card__brand">club med</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Ja was flying &#x1FAE3;</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 0:09</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-08-video1.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-honeymilk.svg" alt=""><span class="card__brand">Honey &amp; milk</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Making these FLUFFY American Pancakes at home</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 1:54</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-09-video2.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-news.svg" alt=""><span class="card__brand">news</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Ja was flying &#x1FAE3;</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 0:09</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-10-video3.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-clubmed.svg" alt=""><span class="card__brand">club med</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Ja was flying &#x1FAE3;</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 0:09</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-08-video1.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-honeymilk.svg" alt=""><span class="card__brand">Honey &amp; milk</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Making these FLUFFY American Pancakes at home</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 1:54</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card--video-reel" style="background-image: url('assets/images/img-09-video2.png')">
+              <video class="card__video-bg" muted loop playsinline></video>
+              <div class="card__overlay card__overlay--top">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-news.svg" alt=""><span class="card__brand">news</span></div>
+              </div>
+              <div class="card__overlay card__overlay--bottom">
+                <div class="card__title">Ja was flying &#x1FAE3;</div>
+                <div class="card__action-row">
+                  <span class="card__duration"><img class="card__play-icon" src="assets/icon-play.svg" alt=""> 0:09</span>
+                  <span class="card__cta">Learn more</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <!-- Section 9: Mode/1:1b — Feature card (Mars/Jupiter) -->
+        <section class="feed-section">
+          <div class="card card--feature">
+            <div class="card__sponsor-bar"><span class="card__sponsor-icon"><img src="assets/icon-ad.svg" alt="Ad"></span><span class="card__sponsor-name">portal to compare</span></div>
+            <div class="card__image-wrap">
+              <div class="card__image card__image--feature" style="background-image: url('assets/images/img-mars-jupiter-50e98f.png')"></div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title card__title--l">Mars and Jupiter get chummy in the night sky. The planets won&rsquo;t get this close again until 2033</h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 10: Mode/3:1 — 3 cards, brand BELOW image (Royalty + Wrexham + Coffee) -->
+        <section class="feed-section">
+          <div class="card-grid card-grid--3col">
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-royalty.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">Royalty</span></div>
+                <div class="card__title">Get 50% Off Name-Brand Jewelry from Zales, Nordstrom and Kay</div>
+                <p class="card__desc">Limited time offer: Get 50% off select jewelry from top brands like Zales, Nordstrom, and Kay. Find the perfect gift or treat yourself to something special.</p>
+                <span class="card__cta">learn more</span>
+              </div>
+            </div>
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-wrexham.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">live news</span></div>
+                <div class="card__title">Fast-rising Wrexham&rsquo;s record turnover helps repay all loans to owners Reynolds and McElhenney</div>
+              </div>
+            </div>
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-coffee.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">news live</span></div>
+                <div class="card__title">Workers are coffee badging to get around return-to-office mandates. What is it?</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 11: Mode/2:1 — 2 cards, brand ABOVE image (Insure + Lifestyle) -->
+        <section class="feed-section">
+          <div class="card-grid card-grid--2col">
+            <div class="card">
+              <div class="card__sponsor-bar"><span class="card__sponsor-icon"><img src="assets/icon-insure.svg" alt=""></span><span class="card__sponsor-name">Insure.com</span></div>
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-22-insure.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__title card__title--m">Council Bluffs: These Companies Are Overcharging You For Auto Insurance</div>
+                <p class="card__desc">Don&rsquo;t pay your next auto insurance bill until you read about this!</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__sponsor-bar"><span class="card__sponsor-icon"><img src="assets/icon-lifestyle.svg" alt=""></span><span class="card__sponsor-name">Smart Lifestyle Trends</span></div>
+              <div class="card__image-wrap">
+                <div class="card__image" style="background-image: url('assets/images/img-23-lifestyle.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__title card__title--m">Cheapest Way To Get A Walk-In Tub If You&rsquo;re On Medicare</div>
+                <p class="card__desc">Seniors With Old And Not Practical Bath Tubs Are Getting A Treat This Month</p>
+                <span class="card__cta">learn more</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 12: Mode/3:1 — 3 cards, brand BELOW image (Ledger + Blinds + Sell Car) -->
+        <section class="feed-section">
+          <div class="card-grid card-grid--3col">
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-24-shop.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">Ledger</span></div>
+                <div class="card__title">In today&rsquo;s digital age, savvy individuals are constantly seeking innovative strategies</div>
+              </div>
+            </div>
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-25-tech.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">Blinds.com&trade;</span></div>
+                <div class="card__title">Order New Blinds Online &amp; Get $199 Home Installation</div>
+                <p class="card__desc">How long does $1,000,000 last in retirement? Learn ways to live comfortably with our guide.</p>
+              </div>
+            </div>
+            <div class="card card--small">
+              <div class="card__image-wrap">
+                <div class="card__image card__image--short" style="background-image: url('assets/images/img-26-wellness.png')"></div>
+              </div>
+              <div class="card__body">
+                <div class="card__brand-row"><img class="card__brand-icon" src="assets/icon-ad.svg" alt=""><span class="card__brand">news live</span></div>
+                <div class="card__title">5 Obvious Indicators That You Should Sell Your Old Car</div>
+                <span class="card__cta">learn more</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Video carousel navigation
+    const carousel = document.getElementById('videoCarousel');
+    const navNext = document.getElementById('videoNavNext');
+    const navPrev = document.getElementById('videoNavPrev');
+
+    function updateCarouselNav() {
+      if (!carousel) return;
+      navPrev.style.display = carousel.scrollLeft > 10 ? '' : 'none';
+      navNext.style.display = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10 ? 'none' : '';
+    }
+
+    if (navNext && carousel) {
+      navNext.addEventListener('click', () => {
+        carousel.scrollBy({ left: 240, behavior: 'smooth' });
+      });
+      navPrev.addEventListener('click', () => {
+        carousel.scrollBy({ left: -240, behavior: 'smooth' });
+      });
+      carousel.addEventListener('scroll', updateCarouselNav);
+      updateCarouselNav();
+    }
+
+    // Assign video sources to reel cards — play on hover only
+    const videoSources = [
+      'assets/videos/reel1.mp4',
+      'assets/videos/reel2.mp4',
+      'assets/videos/reel3.mp4'
+    ];
+
+    document.querySelectorAll('.card--video-reel').forEach((card, i) => {
+      const video = card.querySelector('.card__video-bg');
+      if (!video) return;
+
+      video.src = videoSources[i % videoSources.length];
+      video.preload = 'metadata';
+      video.style.opacity = '1';
+      video.pause();
+
+      card.addEventListener('mouseenter', () => {
+        video.play().catch(() => {});
+      });
+      card.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+
+    // Spotlight stepper — 4 videos, 8 seconds each
+    (function() {
+      const spotlightVideos = [
+        'assets/videos/spotlight1.mp4',
+        'assets/videos/spotlight2.mp4',
+        'assets/videos/spotlight1.mp4',
+        'assets/videos/spotlight2.mp4'
+      ];
+      const video = document.querySelector('.spotlight__video');
+      const steps = document.querySelectorAll('.spotlight__step');
+      if (!video || !steps.length) return;
+
+      let currentStep = 0;
+      const DURATION = 8000; // 8 seconds per video
+
+      function playStep(index) {
+        currentStep = index;
+        // Update stepper states
+        steps.forEach((step, i) => {
+          step.classList.remove('spotlight__step--active', 'spotlight__step--done');
+          const fill = step.querySelector('.spotlight__step-fill');
+          fill.style.animation = 'none';
+          fill.offsetHeight; // force reflow
+          if (i < index) {
+            step.classList.add('spotlight__step--done');
+          } else if (i === index) {
+            step.classList.add('spotlight__step--active');
+            fill.style.animation = '';
+          }
+        });
+
+        // Switch video source
+        video.src = spotlightVideos[index];
+        video.play().catch(() => {});
+      }
+
+      // Auto-advance after 8 seconds
+      let autoTimer;
+      function startAutoAdvance() {
+        autoTimer = setInterval(() => {
+          const next = (currentStep + 1) % spotlightVideos.length;
+          playStep(next);
+        }, DURATION);
+      }
+      startAutoAdvance();
+
+      // Click on a step to jump to it
+      steps.forEach((step, i) => {
+        step.addEventListener('click', () => { clearInterval(autoTimer); playStep(i); startAutoAdvance(); });
+      });
+
+      // Chevron navigation
+      document.getElementById('spotlightPrev').addEventListener('click', () => {
+        clearInterval(autoTimer);
+        const prev = (currentStep - 1 + spotlightVideos.length) % spotlightVideos.length;
+        playStep(prev);
+        startAutoAdvance();
+      });
+      document.getElementById('spotlightNext').addEventListener('click', () => {
+        clearInterval(autoTimer);
+        const next = (currentStep + 1) % spotlightVideos.length;
+        playStep(next);
+        startAutoAdvance();
+      });
+
+      // Start first video
+      playStep(0);
+    })();
+  </script>
+
+</body>
+</html>
