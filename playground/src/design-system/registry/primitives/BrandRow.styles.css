@@ -14,7 +14,7 @@
 .card__brand {
   font: var(--font-card-brand);
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 2px;
 }
 
 .card__brand-row--dark .card__brand {

@@ -115,6 +115,16 @@ export const COMPONENT_REGISTRY: ComponentEntry[] = [
     figmaMatch: true,
     lastUpdated: '2026-03-12',
   },
+  {
+    id: 'publisher-logos',
+    name: 'PublisherLogos',
+    category: 'primitives',
+    description: 'Publisher brand logos used in feed cards, shown at 20x20px',
+    filePath: 'src/design-system/registry/primitives/PublisherLogos/PublisherLogos.tsx',
+    status: 'passed',
+    figmaMatch: true,
+    lastUpdated: '2026-03-12',
+  },
 
   // Layouts
   {
