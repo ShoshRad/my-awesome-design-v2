@@ -285,6 +285,184 @@ export default function BusinessInsiderCurrentPage() {
             </CardGrid>
           </FeedSection>
 
+          {/* ===== Extended Feed — Batch 2 ===== */}
+
+          <FeedSection>
+            <Card1x1
+              title="The Hidden Cost of Free Returns: How Online Shopping Is Reshaping Retail Logistics"
+              description="Retailers are rethinking their return policies as the cost of processing sent-back items reaches record highs, threatening profit margins across the industry."
+              imageSrc="/assets/images/ext-01.jpg"
+              ctaLabel="learn more"
+              sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'ShipSmart' }}
+            />
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={2}>
+              <Card2x1
+                title="Compare Top-Rated Home Insurance Plans in Minutes"
+                description="See side-by-side quotes from leading providers and find the best coverage for your home."
+                imageSrc="/assets/images/ext-02.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'InsureCompare' }}
+                ctaLabel="get quotes"
+              />
+              <Card2x1
+                title="Fed signals potential rate cut amid cooling inflation data"
+                description="Markets rallied as the Federal Reserve hinted at easing monetary policy in the coming months."
+                imageSrc="/assets/images/ext-03.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+            </CardGrid>
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={3}>
+              <Card3x1
+                title="New Study Links Mediterranean Diet to Longer Lifespan"
+                imageSrc="/assets/images/ext-04.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'HealthLine' }}
+                ctaLabel="read more"
+              />
+              <Card3x1
+                title="Apple&rsquo;s mixed-reality headset sales miss internal targets"
+                imageSrc="/assets/images/ext-05.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+              <Card3x1
+                title="Why Remote Workers Are Flocking to Portugal&rsquo;s Algarve Coast"
+                imageSrc="/assets/images/ext-06.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+            </CardGrid>
+          </FeedSection>
+
+          <FeedSection>
+            <Card1x1
+              title="Goldman Sachs Warns of &lsquo;Significant Headwinds&rsquo; for Tech Stocks in Q3"
+              imageSrc="/assets/images/ext-07.jpg"
+              sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'MarketWatch Pro' }}
+            />
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={2}>
+              <Card2x1
+                title="How to Build a Diversified Portfolio in 2026"
+                description="Expert-backed strategies for balancing risk and reward in today&rsquo;s volatile markets."
+                imageSrc="/assets/images/ext-08.jpg"
+                sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'WealthFront' }}
+                ctaLabel="learn more"
+              />
+              <Card2x1
+                title="Nvidia CEO Says AI Will Replace Most Entry-Level Coding Jobs"
+                description="Jensen Huang predicts a fundamental shift in how software gets built over the next five years."
+                imageSrc="/assets/images/ext-09.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+            </CardGrid>
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={3}>
+              <Card3x1
+                title="Shop Smart: Top Picks for Spring Wardrobe Essentials"
+                description="Curated selections from trending brands at unbeatable prices."
+                imageSrc="/assets/images/ext-10.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'StyleBox' }}
+                ctaLabel="shop now"
+              />
+              <Card3x1
+                title="Solar Panels Just Got 40% Cheaper. Here&rsquo;s What Changed."
+                imageSrc="/assets/images/ext-11.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'SunPower' }}
+                ctaLabel="get quote"
+              />
+              <Card3x1
+                title="SpaceX launches largest satellite constellation in single mission"
+                imageSrc="/assets/images/ext-12.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+            </CardGrid>
+          </FeedSection>
+
+          {/* ===== Extended Feed — Batch 3 ===== */}
+
+          <FeedSection>
+            <Card1x1
+              title="The Real Reason Your 401(k) Isn&rsquo;t Growing as Fast as You Think"
+              description="Hidden fees, poor allocation, and market timing myths — a financial advisor breaks down the most common retirement savings mistakes."
+              imageSrc="/assets/images/ext-13.jpg"
+              ctaLabel="read guide"
+              sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'Fidelity' }}
+            />
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={2}>
+              <Card2x1
+                title="Amazon&rsquo;s Secret Warehouse Deals You Didn&rsquo;t Know About"
+                description="Uncover hidden discounts on refurbished and open-box electronics from Amazon&rsquo;s outlet."
+                imageSrc="/assets/images/ext-14.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'DealFinder' }}
+                ctaLabel="see deals"
+              />
+              <Card2x1
+                title="Microsoft&rsquo;s Quiet Push Into Healthcare AI Could Disrupt the Industry"
+                description="The tech giant is rolling out AI diagnostic tools across partner hospital networks."
+                imageSrc="/assets/images/ext-15.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+            </CardGrid>
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={3}>
+              <Card3x1
+                title="EU passes landmark AI regulation with strict enforcement timeline"
+                imageSrc="/assets/images/ext-16.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+              <Card3x1
+                title="The wellness retreats Silicon Valley execs can&rsquo;t stop booking"
+                imageSrc="/assets/images/ext-17.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'WellnessEscape' }}
+                ctaLabel="book now"
+              />
+              <Card3x1
+                title="Smart Locks for Every Budget: Compare Top Picks"
+                imageSrc="/assets/images/ext-18.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'SecureHome' }}
+                ctaLabel="compare"
+              />
+            </CardGrid>
+          </FeedSection>
+
+          <FeedSection>
+            <Card1x1
+              title="Inside the Billionaire Bunker Boom: Why the Ultra-Rich Are Building Underground"
+              imageSrc="/assets/images/ext-19.jpg"
+              sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'LuxuryLiving' }}
+            />
+          </FeedSection>
+
+          <FeedSection>
+            <CardGrid columns={2}>
+              <Card2x1
+                title="How one couple retired at 40 by house-hacking their way to financial freedom"
+                description="Their unconventional strategy turned a duplex purchase into a path to early retirement."
+                imageSrc="/assets/images/ext-20.jpg"
+                brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
+              />
+              <Card2x1
+                title="The Best Online MBA Programs for Working Professionals"
+                description="Flexible schedules, top rankings, and real career outcomes — compare your options now."
+                imageSrc="/assets/images/ext-02.jpg"
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'EduRank' }}
+                ctaLabel="compare"
+              />
+            </CardGrid>
+          </FeedSection>
+
         </div>
       </div>
     </div>
