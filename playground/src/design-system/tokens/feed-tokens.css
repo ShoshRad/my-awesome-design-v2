@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --color-primary-text: #000000;
+  --color-secondary-text: #7F7979;
+  --color-white: #FFFFFF;
+  --color-dark-bg: #373850;
+  --color-dark-text: #101010;
+  --color-dark-text-alt: #181818;
+  --color-gray-text: #5F5F5F;
+  --color-gray-mid: #767676;
+  --color-gray-label: #626262;
+  --color-blue-primary: #00539C;
+  --color-blue-dark: #001F60;
+  --color-yellow: #FFC72A;
+  --color-light-gray: #F4F4F4;
+  --color-light-gray-alt: #F8F8F8;
+  --color-border: #E6E6E6;
+  --color-border-light: #F3F3F3;
+  --color-border-dark: #E8E8E8;
+  --color-gray-d9: #D9D9D9;
+  --color-icon-dark: #1C1B1F;
+
+  /* Typography - Nav */
+  --font-nav-top: 700 18px/0.72em 'Noto Sans', sans-serif;
+  --font-nav-item: 400 13px/1em 'Noto Sans', sans-serif;
+
+  /* Typography - Headlines (Inter) */
+  --font-headline-xl: 700 30.3px/1.32em 'Inter', sans-serif;
+  --font-headline-body: 400 16px/1.25em 'Inter', sans-serif;
+  --font-headline-label: 400 15px/1.07em 'Inter', sans-serif;
+  --font-headline-byline: 400 15px/1.33em 'Inter', sans-serif;
+  --font-headline-sub: 400 13.5px/1.04em 'Inter', sans-serif;
+
+  /* Typography - Article body */
+  --font-article-body: 400 19px/1.58em 'Inter', sans-serif;
+
+  /* Typography - Cards (Roboto) */
+  --font-card-title-l: 400 20px/1.2em 'Roboto', sans-serif;
+  --font-card-title-m: 400 18px/1.22em 'Roboto', sans-serif;
+  --font-card-title-s: 400 16px/1.25em 'Roboto', sans-serif;
+  --font-card-desc: 400 14px/1.29em 'Roboto', sans-serif;
+  --font-card-cta: 500 12px/1em 'Roboto', sans-serif;
+  --font-card-brand: 400 10px/1em 'Roboto', sans-serif;
+  --font-card-bold-title: 700 18px/1.11em 'Roboto', sans-serif;
+
+  /* Layout */
+  --page-width: 1920px;
+  --content-width: 1140px;
+  --main-column-width: 867px;
+  --content-gap: 40px;
+  --card-radius: 12px;
+}

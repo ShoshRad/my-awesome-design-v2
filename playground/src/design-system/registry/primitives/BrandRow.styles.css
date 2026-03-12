@@ -1,0 +1,26 @@
+.card__brand-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card__brand-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__brand {
+  font: var(--font-card-brand);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.card__brand-row--dark .card__brand {
+  color: var(--color-primary-text);
+}
+
+.card__brand-row--light .card__brand {
+  color: var(--color-white);
+}

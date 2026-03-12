@@ -1,0 +1,1 @@
+export { CardPicksCarousel } from './CardPicksCarousel';

@@ -1,0 +1,1 @@
+export { CardTrending } from './CardTrending';

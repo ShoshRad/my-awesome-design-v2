@@ -1,0 +1,23 @@
+.card.card--small {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.card--small .card__image--feature {
+  aspect-ratio: 16 / 9;
+}
+
+.card--small .card__body {
+  padding: 8px 10px;
+  gap: 6px;
+}
+
+.card__title--s {
+  font: var(--font-card-title-s);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

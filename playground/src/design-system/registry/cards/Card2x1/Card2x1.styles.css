@@ -1,0 +1,7 @@
+.card__title--m {
+  font: var(--font-card-title-m);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

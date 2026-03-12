@@ -1,0 +1,442 @@
+/* ============================================
+   Preview Page — Demo Banner
+   ============================================ */
+.preview-banner {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.preview-banner__back {
+  font-size: 14px;
+  color: #4c5560;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.preview-banner__back:hover {
+  color: #212832;
+}
+
+.preview-banner__center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preview-banner__badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.preview-banner__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212832;
+}
+
+.preview-banner__spacer {
+  width: 120px;
+}
+
+/* ============================================
+   Publisher Site Chrome — Top Bar
+   ============================================ */
+.top-bar {
+  background-color: var(--color-dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+}
+
+.top-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 62px 20px 20px;
+}
+
+.top-bar__spacer {
+  flex: 1;
+}
+
+.top-bar__logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar__logo img {
+  width: 56px;
+  height: 56px;
+  border-radius: 26px;
+  object-fit: cover;
+}
+
+.top-bar__login {
+  flex: 1;
+  text-align: right;
+  font: 700 18px/0.72em 'Noto Sans', sans-serif;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* ============================================
+   Publisher Site Chrome — Navigation Bar
+   ============================================ */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.nav-bar__menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-bar__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+  flex: 1;
+  padding: 7.5px 0;
+  overflow-x: auto;
+}
+
+.nav-bar__item {
+  font: 400 13px/1em 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  color: var(--color-primary-text);
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 2.5px 0;
+}
+
+.nav-bar__item:hover {
+  color: var(--color-blue-primary);
+}
+
+.nav-bar__weather {
+  font: 400 13px/1em 'Noto Sans', sans-serif;
+  color: var(--color-primary-text);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   Main Content Layout
+   ============================================ */
+.page-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.page-content__inner {
+  display: flex;
+  gap: var(--content-gap);
+  width: var(--content-width);
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--main-column-width);
+  padding: 4px 0;
+  gap: 16px;
+}
+
+/* ============================================
+   Article Layout
+   ============================================ */
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.article__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 0 20px 0;
+  max-width: 640px;
+}
+
+.article__category {
+  font: var(--font-headline-label);
+  color: var(--color-gray-text);
+}
+
+.article__title {
+  font: var(--font-headline-xl);
+  color: var(--color-dark-text);
+  line-height: 1.32em;
+}
+
+.article__meta {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-top: 4px;
+}
+
+.article__byline {
+  font: var(--font-headline-body);
+  color: var(--color-gray-text);
+}
+
+.article__author {
+  font: var(--font-headline-byline);
+  color: var(--color-gray-text);
+}
+
+.article__date {
+  font: 400 14.9px/1.34em 'Inter', sans-serif;
+  color: var(--color-gray-text);
+  padding-top: 2px;
+}
+
+.article__promo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  background: var(--color-white);
+  border: 1px solid #DCDCDC;
+  border-radius: 9999px;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.article__promo span {
+  font: var(--font-headline-sub);
+  color: var(--color-dark-text-alt);
+}
+
+.article__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 16px;
+}
+
+.article__body p {
+  font: var(--font-article-body);
+  color: var(--color-dark-text);
+  line-height: 1.58em;
+}
+
+.article__body--continued {
+  padding: 30px 0 0;
+}
+
+/* Article Ads */
+.article__ads {
+  position: absolute;
+  top: 0;
+  right: -273px;
+  width: 233px;
+  padding-top: 8px;
+}
+
+.ad-banner-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ad-banner-inline__label {
+  font: 400 10px/2.8em 'Roboto', sans-serif;
+  color: var(--color-gray-label);
+  text-align: center;
+}
+
+.ad-banner-inline__content {
+  background: linear-gradient(135deg, #E8720C 0%, #D4570A 100%);
+  border-radius: 8px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.ad-banner-inline__headline {
+  font: 900 22px/1.2em 'Lato', sans-serif;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.ad-banner-inline__subtext {
+  font: 400 14px/1.3em 'Inter', sans-serif;
+  color: var(--color-white);
+}
+
+.ad-banner-inline__button {
+  display: inline-block;
+  font: 700 14px/1.3em 'Lato', sans-serif;
+  color: var(--color-white);
+  text-transform: uppercase;
+  background-color: var(--color-blue-primary);
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+/* Article Media */
+.article__media {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.article__image {
+  width: 100%;
+  height: 450px;
+  background-color: var(--color-light-gray);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article__play-btn {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.article__play-btn:hover {
+  opacity: 1;
+}
+
+/* Article Footer */
+.article__footer {
+  font: 400 17px/1.32em 'Inter', sans-serif;
+  color: var(--color-gray-mid);
+  padding: 16px 0 0;
+  max-width: 640px;
+  margin-left: 113px;
+}
+
+/* Article Topics */
+.article__topics {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  max-width: 640px;
+  margin-left: 113px;
+  flex-wrap: wrap;
+}
+
+.article__topics-label {
+  font: 400 17.7px/1.27em 'Inter', sans-serif;
+  color: var(--color-dark-text);
+}
+
+.article__topics-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.topic-tag {
+  font: 700 16.3px/1.38em 'Inter', sans-serif;
+  color: var(--color-dark-text);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.topic-tag:hover {
+  color: var(--color-blue-primary);
+}
+
+/* ============================================
+   Separator
+   ============================================ */
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border-dark);
+  margin: 8px 0;
+}
+
+/* ============================================
+   Section Header
+   ============================================ */
+.section-header {
+  font: var(--font-card-title-l);
+  color: var(--color-primary-text);
+  padding: 4px 0 8px;
+}
+
+/* ============================================
+   Feed Sections
+   ============================================ */
+.feed-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+/* ============================================
+   Card Carousel (video reel horizontal scroll)
+   ============================================ */
+.card-carousel-wrap {
+  position: relative;
+}
+
+.card-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 4px 2px;
+  max-width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.card-carousel::-webkit-scrollbar {
+  display: none;
+}

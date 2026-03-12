@@ -1,0 +1,22 @@
+.card__cta {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.card__cta--bordered {
+  justify-content: center;
+  border-top: 1px solid var(--color-border);
+}
+
+.card__cta--inline {
+  justify-content: flex-end;
+  border-top: none;
+}
+
+.card__cta-label {
+  font: var(--font-card-cta);
+  color: var(--color-blue-primary);
+  text-transform: uppercase;
+  cursor: pointer;
+}
