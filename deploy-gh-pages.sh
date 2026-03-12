@@ -54,12 +54,20 @@ find . \( -name "*.html" -o -name "*.js" -o -name "*.txt" -o -name "*.css" \) -e
   {} +
 
 echo "=== Step 3: Fix navigation links ==="
-# Fix sidebar links (href:"/path" -> href:"/base/path/")
+# Fix JS object-style links (href:"/path" -> href:"/base/path/")
 find . -name "*.js" -exec sed -i '' \
   -e 's|href:"/preview"|href:"/my-awesome-design/preview/"|g' \
   -e 's|href:"/business-insider"|href:"/my-awesome-design/business-insider/"|g' \
   -e 's|href:"/business-insider-current"|href:"/my-awesome-design/business-insider-current/"|g' \
   -e 's|href:"/"|href:"/my-awesome-design/"|g' \
+  {} +
+
+# Fix HTML attribute-style links (href="/path" -> href="/base/path/")
+find . -name "*.html" -exec sed -i '' \
+  -e 's|href="/preview"|href="/my-awesome-design/preview/"|g' \
+  -e 's|href="/business-insider"|href="/my-awesome-design/business-insider/"|g' \
+  -e 's|href="/business-insider-current"|href="/my-awesome-design/business-insider-current/"|g' \
+  -e 's|href="/"|href="/my-awesome-design/"|g' \
   {} +
 
 echo "=== Step 4: Verify no broken paths remain ==="

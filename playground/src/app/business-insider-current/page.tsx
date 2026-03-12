@@ -350,7 +350,7 @@ export default function BusinessInsiderCurrentPage() {
                 title="How to Build a Diversified Portfolio in 2026"
                 description="Expert-backed strategies for balancing risk and reward in today&rsquo;s volatile markets."
                 imageSrc="/assets/images/ext-08.jpg"
-                sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'WealthFront' }}
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'WealthFront' }}
                 ctaLabel="learn more"
               />
               <Card2x1
