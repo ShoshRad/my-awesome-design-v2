@@ -7,7 +7,14 @@ interface Card1x1Props {
   imageSrc: string;
   ctaLabel?: string;
   sponsor?: { iconSrc: string; name: string };
+  variant?: 'default' | 'social' | 'social-tall';
 }
+
+const IMAGE_CLASS: Record<string, string> = {
+  default: 'card__image--feature',
+  social: 'card__image--social',
+  'social-tall': 'card__image--social-tall',
+};
 
 export function Card1x1({
   title,
@@ -15,6 +22,7 @@ export function Card1x1({
   imageSrc,
   ctaLabel,
   sponsor,
+  variant = 'default',
 }: Card1x1Props) {
   return (
     <div className="card card--feature">
@@ -30,7 +38,7 @@ export function Card1x1({
       )}
       <div className="card__image-wrap">
         <div
-          className="card__image card__image--feature"
+          className={`card__image ${IMAGE_CLASS[variant]}`}
           style={{ backgroundImage: `url(${imageSrc})` }}
           role="img"
           aria-label={title}

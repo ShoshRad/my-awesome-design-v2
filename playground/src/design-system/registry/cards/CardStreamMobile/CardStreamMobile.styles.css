@@ -1,0 +1,92 @@
+/* ── CardStreamMobile ──
+   Compact horizontal card for mobile stream feeds.
+   Layout: image (120×67) left, title right, brand row bottom.
+   Based on Figma "Stream feed" component (Type=1by4).
+*/
+
+.card-stream-mobile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.card-stream-mobile__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 12px 6px;
+}
+
+.card-stream-mobile__image {
+  width: 120px;
+  height: 67px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-stream-mobile__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-stream-mobile__title {
+  font: var(--font-card-title-s);
+  color: var(--color-primary-text);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-stream-mobile__bottom {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 0 12px;
+  border-top: 1px solid #E6E6E6;
+  min-height: 36px;
+}
+
+.card-stream-mobile__brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.card-stream-mobile__brand-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-stream-mobile__brand-name {
+  font: var(--font-card-brand);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-secondary-text);
+}
+
+.card-stream-mobile__cta {
+  font: var(--font-card-cta);
+  color: var(--color-primary-text);
+  text-transform: capitalize;
+  background: none;
+  border: 1px solid var(--color-border-light);
+  border-radius: 33px;
+  padding: 0 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}

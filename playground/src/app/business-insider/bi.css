@@ -344,6 +344,9 @@
   --font-card-title-m: 400 18px/1.22em var(--bi-font);
   --font-card-title-s: 400 16px/1.25em var(--bi-font);
   --font-card-desc: 400 14px/1.29em var(--bi-font);
+  --font-card-cta: 500 12px/1em var(--bi-font);
+  --font-card-brand: 400 10px/1em var(--bi-font);
+  --font-card-bold-title: 700 18px/1.11em var(--bi-font);
   --font-section-header: 700 20px/1.2em var(--bi-font);
 }
 

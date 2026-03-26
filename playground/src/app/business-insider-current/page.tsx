@@ -456,7 +456,7 @@ export default function BusinessInsiderCurrentPage() {
               <Card2x1
                 title="The Best Online MBA Programs for Working Professionals"
                 description="Flexible schedules, top rankings, and real career outcomes — compare your options now."
-                imageSrc="/assets/images/ext-02.jpg"
+                imageSrc="/assets/images/batch3-05.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'EduRank' }}
                 ctaLabel="compare"
               />

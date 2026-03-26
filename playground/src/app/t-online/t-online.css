@@ -1,0 +1,13 @@
+/* ============================================
+   t-online.de — Publisher Chrome
+   ============================================ */
+
+/* Hide scrollbar on nav */
+.tonline-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Nav link hover */
+.tonline-nav a:hover {
+  color: #E20074;
+}

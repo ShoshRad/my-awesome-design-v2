@@ -1,0 +1,11 @@
+:HL["/my-awesome-design-v2/_next/static/chunks/81b8ec2a14a6d549.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/f1fce1b3b2a0f80c.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/c0aaca90db1d3cef.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/fd2f5b5381b60cc2.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/d961e5691cb5a5ec.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/675f56612e8f2baa.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/7b8133316bbf87e3.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/37a3b139d49a66ef.css","style"]
+:HL["/my-awesome-design-v2/_next/static/chunks/594dccb7079f0081.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap","style"]
+0:{"buildId":"ETba_RP79iW6P3VWwbSts","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"demo","paramType":null,"paramKey":"demo","hasRuntimePrefetch":false,"slots":{"children":{"name":"publisher","paramType":"d","paramKey":"generic","hasRuntimePrefetch":false,"slots":{"children":{"name":"widget","paramType":"d","paramKey":"premium-feed-current","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

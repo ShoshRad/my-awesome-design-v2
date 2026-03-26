@@ -1,0 +1,1 @@
+export { RegularFeed } from './RegularFeed';

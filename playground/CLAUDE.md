@@ -97,6 +97,13 @@ src/
 - Plain CSS with CSS custom properties for card components
 - Desktop only (1920px viewport, 867px main column)
 
+## Feed Content Rules
+
+- **No duplicate images within a feed.** Every `imageSrc` in a single feed (e.g. `BIPremiumFeedContent`, `NewsLivePremiumFeedContent`) must be unique. When extending a feed with additional batches, use different images — never repeat an image that already appears earlier in the same feed. When no unique images are available, download new ones rather than reusing existing images from the project.
+- When adding new feed content, check existing `imageSrc` values first to avoid collisions.
+- Available stock images are in `public/assets/images/` (ext-01 through ext-20, batch3-01 through batch3-17, plus named images).
+- **Fixed 16px gap between feed sections.** All feed containers must use `gap: 16` between `FeedSection` children. This applies everywhere: widget components, publisher demos, sandbox, handcrafted content. The parent flex column wrapping `FeedSection` elements must always have `display: flex; flex-direction: column; gap: 16px`.
+
 ## Design Tokens
 
 All tokens come from the Figma Premium Feed design. They are defined as CSS custom properties in `tokens/feed-tokens.css` and as TypeScript constants in `tokens/index.ts`.

@@ -17,7 +17,7 @@ export const COMPONENT_REGISTRY: ComponentEntry[] = [
     id: 'card-1x1',
     name: 'Card1x1',
     category: 'cards',
-    description: 'Full-width feature card with large image, title, description, and optional CTA',
+    description: 'Full-width feature card with large image, title, description, and optional CTA. Supports variant="social" (1:1) and variant="social-tall" (4:7) image ratios',
     filePath: 'src/design-system/registry/cards/Card1x1/Card1x1.tsx',
     status: 'passed',
     figmaMatch: true,
@@ -57,7 +57,7 @@ export const COMPONENT_REGISTRY: ComponentEntry[] = [
     id: 'card-spotlight',
     name: 'CardSpotlight',
     category: 'cards',
-    description: 'Video spotlight with stepper progress and auto-advance',
+    description: 'Video spotlight with stepper progress and auto-advance. Supports variant="mobile" (dark card with gradient overlay, white text, progress bar)',
     filePath: 'src/design-system/registry/cards/CardSpotlight/CardSpotlight.tsx',
     status: 'passed',
     figmaMatch: true,
@@ -82,6 +82,17 @@ export const COMPONENT_REGISTRY: ComponentEntry[] = [
     status: 'passed',
     figmaMatch: true,
     lastUpdated: '2026-03-12',
+  },
+
+  {
+    id: 'card-stream-mobile',
+    name: 'CardStreamMobile',
+    category: 'cards',
+    description: 'Compact horizontal card for mobile stream feeds (image left, title right, brand bottom)',
+    filePath: 'src/design-system/registry/cards/CardStreamMobile/CardStreamMobile.tsx',
+    status: 'passed',
+    figmaMatch: true,
+    lastUpdated: '2026-03-25',
   },
 
   // Primitives

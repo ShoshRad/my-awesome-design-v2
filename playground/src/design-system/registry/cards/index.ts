@@ -5,3 +5,4 @@ export { CardTrending } from './CardTrending';
 export { CardSpotlight } from './CardSpotlight';
 export { CardVideoReel } from './CardVideoReel';
 export { CardPicksCarousel } from './CardPicksCarousel';
+export { CardStreamMobile } from './CardStreamMobile';

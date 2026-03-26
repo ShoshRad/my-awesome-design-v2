@@ -8,6 +8,8 @@ interface SpotlightItem {
   videoSrc: string;
   title: string;
   brand: { iconSrc: string; name: string };
+  ctaLabel?: string;
+  imageSrc?: string;
 }
 
 interface CardSpotlightProps {
@@ -18,9 +20,11 @@ interface CardSpotlightProps {
   /** @deprecated Use items[] instead */
   videoSources?: string[];
   items?: SpotlightItem[];
+  variant?: 'desktop' | 'mobile';
 }
 
 export function CardSpotlight(props: CardSpotlightProps) {
+  const { variant = 'desktop' } = props;
   const items: SpotlightItem[] = props.items
     ? props.items
     : (props.videoSources || []).map((src) => ({
@@ -55,6 +59,72 @@ export function CardSpotlight(props: CardSpotlightProps) {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, [activeStep, goToStep]);
+
+  if (variant === 'mobile') {
+    const currentItem = items[activeStep];
+    return (
+      <div className="card card--spotlight-mobile">
+        <div className="card__video-wrap--mobile">
+          {currentItem?.imageSrc ? (
+            <div
+              className="card__video-bg"
+              style={{ backgroundImage: `url(${currentItem.imageSrc})` }}
+              role="img"
+              aria-label={currentItem?.title}
+            />
+          ) : (
+            <video
+              ref={videoRef}
+              className="card__video"
+              src={currentItem?.videoSrc}
+              muted
+              autoPlay
+              playsInline
+            />
+          )}
+          <div className="card__video-gradient" />
+
+          <button
+            className="card__nav--mobile card__nav--mobile-prev"
+            onClick={() => goToStep(activeStep - 1)}
+            aria-label="Previous"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M12 15L7 10L12 5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          <button
+            className="card__nav--mobile card__nav--mobile-next"
+            onClick={() => goToStep(activeStep + 1)}
+            aria-label="Next"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M8 5L13 10L8 15" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="card__body--mobile">
+          <div className="card__brand--mobile">
+            <span className="card__brand-name--mobile">{currentItem?.brand.name}</span>
+          </div>
+          <div className="card__content-row--mobile">
+            <h3 className="card__title--mobile">{currentItem?.title}</h3>
+            {currentItem?.ctaLabel && (
+              <button className="card__cta--mobile">{currentItem.ctaLabel}</button>
+            )}
+          </div>
+        </div>
+
+        <div className="card__progress-bar--mobile">
+          <div
+            className="card__progress-fill--mobile"
+            style={{ width: `${((activeStep + 1) / totalSteps) * 100}%` }}
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="card card--spotlight">

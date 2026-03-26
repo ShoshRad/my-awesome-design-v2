@@ -6,6 +6,7 @@ export {
   CardSpotlight,
   CardVideoReel,
   CardPicksCarousel,
+  CardStreamMobile,
 } from './cards';
 
 export {

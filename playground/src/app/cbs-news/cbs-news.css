@@ -1,0 +1,35 @@
+/* ============================================
+   CBS NEWS — Publisher Chrome + Feed Token Overrides
+   ============================================ */
+
+/*
+ * CBS News fonts:
+ *   Headlines: "TTNorms Pro Serif Bold", serif (custom licensed, no CDN)
+ *   Body: "TTNorms Pro Serif Normal", serif (custom licensed, no CDN)
+ *   UI/Nav: "Proxima Nova", sans-serif
+ *
+ *   System fallback: Georgia, serif for headline/body; Arial, sans-serif for UI
+ *   Note: TTNorms is NOT a Google Font or system font. Georgia is the closest
+ *   available serif match for body/headline weight and proportions.
+ */
+
+/* Override card font tokens — use publisher headline font for titles */
+.cbsnews-feed {
+  --font-card-title-l: 700 20px/1.25em Georgia, 'Times New Roman', serif;
+  --font-card-title-m: 700 18px/1.25em Georgia, 'Times New Roman', serif;
+  --font-card-title-s: 700 16px/1.25em Georgia, 'Times New Roman', serif;
+  --font-card-desc: 450 14px/1.5em Georgia, 'Times New Roman', serif;
+  --font-card-bold-title: 700 18px/1.25em Georgia, 'Times New Roman', serif;
+  --font-section-header: 700 20px/1.2em 'Proxima Nova', Arial, sans-serif;
+}
+
+/* Section header — matches "More from CBS News" heading style
+ * Spacing rule: padding 4px 0 8px, no margin — matches NewsLive base.
+ * The 16px parent gap provides separation above; 8px below keeps title close to cards. */
+.cbsnews-feed .section-header {
+  font: 700 20px/1.2em 'Proxima Nova', Arial, sans-serif;
+  color: #101010;
+  padding: 4px 0 8px;
+  border-bottom: none;
+  margin-bottom: 0;
+}

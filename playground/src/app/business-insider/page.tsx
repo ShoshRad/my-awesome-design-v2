@@ -347,7 +347,7 @@ export default function BusinessInsiderPage() {
               <CardVideoReel
                 title="Making these FLUFFY American Pancakes at home"
                 brand={{ iconSrc: '/assets/icon-honeymilk.svg', name: 'Honey & milk' }}
-                imageSrc="/assets/images/img-08-video1.png"
+                imageSrc="/assets/images/img-scroll1.png"
                 videoSrc="/assets/videos/reel1.mp4"
                 duration="1:54"
                 ctaLabel="Learn more"
@@ -489,14 +489,15 @@ export default function BusinessInsiderPage() {
                 title="How to Build a Diversified Portfolio in 2026"
                 description="Expert-backed strategies for balancing risk and reward in today&rsquo;s volatile markets."
                 imageSrc="/assets/images/ext-11.jpg"
-                sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'WealthFront' }}
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'WealthFront' }}
                 ctaLabel="learn more"
               />
               <Card2x1
                 title="The Best Online MBA Programs for Working Professionals"
                 description="Flexible schedules, top rankings, and real career outcomes\u2014compare your options now."
                 imageSrc="/assets/images/ext-12.jpg"
-                sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'EduRank' }}
+                brand={{ iconSrc: '/assets/icon-ad.svg', name: 'EduRank' }}
+                ctaLabel="learn more"
               />
             </CardGrid>
           </FeedSection>
@@ -577,10 +578,10 @@ export default function BusinessInsiderPage() {
             <CardPicksCarousel
               brand={{ iconSrc: '/assets/icon-verizon.png', name: 'verizon' }}
               items={[
-                { imageSrc: '/assets/images/ext-03.jpg', title: 'Stream live sports, news, and more with Verizon\u2019s all-in-one entertainment bundle' },
-                { imageSrc: '/assets/images/ext-06.jpg', title: 'Why families are switching to Verizon\u2019s unlimited plan for better coverage' },
-                { imageSrc: '/assets/images/ext-09.jpg', title: 'Get the latest Samsung Galaxy with trade-in savings up to $800' },
-                { imageSrc: '/assets/images/ext-12.jpg', title: 'Verizon Home Internet: Fast, reliable, no annual contract' },
+                { imageSrc: '/assets/images/batch3-01.jpg', title: 'Stream live sports, news, and more with Verizon\u2019s all-in-one entertainment bundle' },
+                { imageSrc: '/assets/images/batch3-02.jpg', title: 'Why families are switching to Verizon\u2019s unlimited plan for better coverage' },
+                { imageSrc: '/assets/images/batch3-03.jpg', title: 'Get the latest Samsung Galaxy with trade-in savings up to $800' },
+                { imageSrc: '/assets/images/batch3-04.jpg', title: 'Verizon Home Internet: Fast, reliable, no annual contract' },
               ]}
             />
           </FeedSection>
@@ -590,14 +591,14 @@ export default function BusinessInsiderPage() {
               <Card2x1
                 title="Amazon&rsquo;s Secret Warehouse Deals You Didn&rsquo;t Know About"
                 description="Uncover hidden discounts on refurbished and open-box electronics from Amazon&rsquo;s outlet."
-                imageSrc="/assets/images/ext-08.jpg"
+                imageSrc="/assets/images/batch3-05.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'DealFinder' }}
                 ctaLabel="see deals"
               />
               <Card2x1
                 title="Nvidia CEO Says AI Will Replace Most Entry-Level Coding Jobs"
                 description="Jensen Huang predicts a fundamental shift in how software gets built over the next five years."
-                imageSrc="/assets/images/ext-10.jpg"
+                imageSrc="/assets/images/batch3-06.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'TechCrunch Pro' }}
                 ctaLabel="read more"
               />
@@ -608,7 +609,7 @@ export default function BusinessInsiderPage() {
             <Card1x1
               title="The Real Reason Your 401(k) Isn&rsquo;t Growing as Fast as You Think"
               description="Hidden fees, poor allocation, and market timing myths\u2014a financial advisor breaks down the most common retirement savings mistakes."
-              imageSrc="/assets/images/ext-14.jpg"
+              imageSrc="/assets/images/batch3-07.jpg"
               ctaLabel="read guide"
               sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'Fidelity' }}
             />
@@ -618,19 +619,19 @@ export default function BusinessInsiderPage() {
             <CardGrid columns={3}>
               <Card3x1
                 title="EU passes landmark AI regulation with strict enforcement timeline"
-                imageSrc="/assets/images/ext-15.jpg"
+                imageSrc="/assets/images/batch3-08.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'PolicyTracker' }}
                 ctaLabel="read more"
               />
               <Card3x1
                 title="The wellness retreats Silicon Valley execs can&rsquo;t stop booking"
-                imageSrc="/assets/images/ext-16.jpg"
+                imageSrc="/assets/images/batch3-09.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'WellnessEscape' }}
                 ctaLabel="book now"
               />
               <Card3x1
                 title="How one couple retired at 40 by house-hacking their way to financial freedom"
-                imageSrc="/assets/images/ext-19.jpg"
+                imageSrc="/assets/images/batch3-10.jpg"
                 brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
               />
             </CardGrid>
@@ -641,27 +642,27 @@ export default function BusinessInsiderPage() {
             <TrendingGrid>
               <CardTrending
                 title="Boeing faces fresh scrutiny after whistleblower testimony on Capitol Hill"
-                imageSrc="/assets/images/ext-01.jpg"
+                imageSrc="/assets/images/batch3-11.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'DefenseNews' }}
                 ctaLabel="Learn More"
               />
               <CardTrending
                 title="Costco&rsquo;s gold bars are selling out faster than ever"
-                imageSrc="/assets/images/ext-04.jpg"
+                imageSrc="/assets/images/batch3-12.jpg"
                 brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
                 category="Retail"
                 ctaLabel="Learn More"
               />
               <CardTrending
                 title="The surprising city that just topped the best places to live ranking"
-                imageSrc="/assets/images/ext-05.jpg"
+                imageSrc="/assets/images/batch3-13.jpg"
                 brand={{ iconSrc: '/assets/logos/bi-brand.png', name: 'Business Insider' }}
                 category="Real Estate"
                 ctaLabel="Learn More"
               />
               <CardTrending
                 title="Why major airlines are quietly shrinking business class"
-                imageSrc="/assets/images/ext-07.jpg"
+                imageSrc="/assets/images/batch3-14.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'Kayak' }}
                 category="Travel"
                 ctaLabel="Learn More"
@@ -674,14 +675,14 @@ export default function BusinessInsiderPage() {
               <Card2x1
                 title="Solar Panels Just Got 40% Cheaper. Here&rsquo;s What Changed."
                 description="New manufacturing breakthroughs are making residential solar more affordable than ever."
-                imageSrc="/assets/images/ext-11.jpg"
+                imageSrc="/assets/images/batch3-15.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'SunPower' }}
                 ctaLabel="get quote"
               />
               <Card2x1
                 title="Microsoft&rsquo;s Quiet Push Into Healthcare AI Could Disrupt the Industry"
                 description="The tech giant is rolling out AI diagnostic tools across partner hospital networks."
-                imageSrc="/assets/images/ext-13.jpg"
+                imageSrc="/assets/images/batch3-16.jpg"
                 brand={{ iconSrc: '/assets/icon-ad.svg', name: 'Azure Health' }}
                 ctaLabel="learn more"
               />
@@ -691,7 +692,7 @@ export default function BusinessInsiderPage() {
           <FeedSection>
             <Card1x1
               title="Inside the Billionaire Bunker Boom: Why the Ultra-Rich Are Building Underground"
-              imageSrc="/assets/images/ext-20.jpg"
+              imageSrc="/assets/images/batch3-17.jpg"
               sponsor={{ iconSrc: '/assets/icon-ad.svg', name: 'LuxuryLiving' }}
             />
           </FeedSection>

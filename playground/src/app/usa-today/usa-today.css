@@ -1,0 +1,25 @@
+/* ============================================
+   USA TODAY — Publisher Chrome + Feed Token Overrides
+   ============================================ */
+
+/* Override card font tokens to use USA TODAY publisher fonts */
+.usatoday-feed {
+  --font-card-title-l: 400 20px/1.2em 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+  --font-card-title-m: 400 18px/1.22em 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+  --font-card-title-s: 400 16px/1.25em 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+  --font-card-desc: 400 14px/1.29em 'Georgia Pro', Georgia, 'Droid Serif', serif;
+  --font-card-bold-title: 700 18px/1.11em 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+  --font-section-header: 600 20px/1.2em 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+}
+
+/* Section header — matches inline "More Stories" style with bottom line
+ * Spacing rule: padding 4px 0 8px, no margin — matches NewsLive base.
+ * The 16px parent gap provides separation above; 8px below keeps title close to cards. */
+.usatoday-feed .section-header {
+  font: 600 20px/1.2em 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  color: #303030;
+  padding: 4px 0 8px;
+  border-bottom: 2px solid #303030;
+  margin-bottom: 8px; /* clearance below decorative border — only allowed when border/stroke present */
+}

@@ -1,0 +1,1 @@
+.card.card--small{border:1px solid var(--color-border-light);border-radius:var(--card-radius);background:var(--color-white);overflow:hidden}.card--small .card__image--feature{aspect-ratio:16/9}.card--small .card__body{gap:6px;padding:8px 10px}.card__title--s{font:var(--font-card-title-s);-webkit-line-clamp:3;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="32" viewBox="0 0 96 32">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  </style>
+  <text x="1" y="13" fill="#303030" font-size="15" font-weight="900" letter-spacing="2">USA</text>
+  <text x="1" y="29" fill="#303030" font-size="15" font-weight="900" letter-spacing="1.5">TODAY</text>
+</svg>

@@ -42,6 +42,14 @@
   aspect-ratio: 16 / 9;
 }
 
+.card__image--social {
+  aspect-ratio: 1 / 1;
+}
+
+.card__image--social-tall {
+  aspect-ratio: 4 / 7;
+}
+
 .card__image-wrap:hover .card__image {
   transform: scale(1.04);
 }
